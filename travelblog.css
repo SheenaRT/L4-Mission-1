@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Includes header <nav> bar, <h1>, <p>, <button> & background image */
+.header {
+  width: 100%;
+}
+
+/* styling of background image */
+#bg-img {
+  background-image: url("beach.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.container {
+  position: absolute;
+  margin: 20;
+  width: 100%;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(240, 247, 247, 0.251);
+}
+
+/* contents in nav bar */
+.topnav a {
+  font-size: 20px;
+  font-family: "Secular One", sans-serif;
+  color: rgb(252, 251, 251);
+  padding: 30px 50px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: black;
+}
+/* includes header <h1>, <p> & <button> */
+.text1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* header <h1> */
+.heading {
+  font-family: "Carter One", cursive;
+  font-size: 65px;
+  color: rgb(231, 231, 231);
+  text-shadow: 2px 2px #080707;
+  letter-spacing: 0px;
+  display: inline-flex;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+  transition: width 2s, height 4s;
+  animation-name: example;
+  animation-duration: 4s;
+  /*Delay transition start for 2 seconds*/
+  transition-delay: 2s;
+  /*Play transition slow at beginning & end*/
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+/* animation for header <h1> */
+@keyframes example {
+  0% {
+    color: rgb(197, 197, 246);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: rgb(247, 247, 194);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    color: rgb(244, 186, 186);
+    left: 0px;
+    top: 200px;
+  }
+  75% {
+    color: rgb(176, 200, 243);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    color: rgb(201, 244, 221);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* styling for header <p> */
+.blog-text {
+  font-family: "Secular One", sans-serif;
+  font-size: 30px;
+  color: rgb(18, 18, 17);
+  text-shadow: 2px 2px #f7f7f7;
+  padding-bottom: 80px;
+}
+.btn {
+  border: 3px solid black;
+  border-radius: 15px;
+  font-family: "Pangolin", cursive;
+  color: rgb(6, 5, 5);
+  background-color: rgb(239, 238, 214);
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(214, 214, 223, 0.537);
+  color: rgb(20, 70, 71);
+}
+
+/* @media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction:row;
+        font-size: 12px;
+    }
+    /*  */
+
+/* styling of <h3> headings in main body */
+.h3_headers {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Amatic SC", cursive;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Comic Neue", cursive;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* entire contents in form incl heading */
+#travel-contact {
+  margin-left: 630px;
+  margin-top: 40px;
+  background-color: rgba(211, 211, 211, 0.39);
+  width: 300px;
+  border: 10px solid rgb(175, 219, 240);
+  border-radius: 20px;
+  padding: 20px 10px;
+  padding-top: 2px;
+  font-family: "Secular One", sans-serif;
+}
+
+/* entire contents in form minue heading */
+.contact {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+}
+/* form heading */
+#getintouch {
+  text-align: center;
+  color: rgba(218, 67, 87, 0.669);
+  font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 2px 2px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+textarea {
+  border: 2px solid rgb(2, 2, 2);
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: rgba(229, 122, 229, 0.164);
+  color: rgb(49, 46, 46);
+  width: 50%;
+}
+/* Facebook icon - Instagram and YouTube icons not working :( */
+#fb {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(209, 240, 237, 0.765);
+  color: rgba(50, 48, 48, 0.719);
+  margin-top: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
